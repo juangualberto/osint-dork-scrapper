@@ -10,6 +10,6 @@ def loadResults(text):
 data = loadResults('site:juntadeandalucia.es inurl:educacion/portals/galion filetype:pdf')
 
 for resultado in data:
-    print ("Descargando... " + resultado['href'])
+    print ("\nDescargando... " + resultado['href']+"\n")
     wget.download(resultado['href'], out_dir)
 
