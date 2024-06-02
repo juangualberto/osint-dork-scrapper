@@ -1,0 +1,10 @@
+certifi==2024.6.2
+charset-normalizer==3.3.2
+click==8.1.7
+duckduckgo_search==6.1.4
+idna==3.7
+orjson==3.10.3
+pyreqwest_impersonate==0.4.7
+requests==2.32.3
+urllib3==2.2.1
+wget==3.2
