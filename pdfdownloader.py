@@ -11,5 +11,7 @@ data = loadResults('site:juntadeandalucia.es inurl:educacion/portals/galion file
 
 for resultado in data:
     print ("\nDescargando... " + resultado['href']+"\n")
-    wget.download(resultado['href'], out_dir)
-
+    try: 
+        wget.download(resultado['href'], out_dir)
+    except:
+        print("**** Error al descargar el archivo: "+resultado['href']+" **** \n")
